@@ -1,6 +1,20 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<body>
-Hey!! It's a simple Dynamic Web Application :)
+
+<body style="text-align: center;">
+	<h1>Enter your GitHub user name</h1>
+
+	<input id="uname" type="text">
+	<button type="button" onclick="EnterUname()">Submit</button>
+	<p style="color: green" id="veeru"></p>
+
+	<script>
+		function EnterUname() {
+			var x = document.getElementById("uname").value;
+			document.getElementById("veeru").innerHTML = "Hey!! " + x
+					+ " Welcome to dynamic-web-project";
+		}
+	</script>
 </body>
+
 </html>
